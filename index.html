@@ -876,7 +876,53 @@
   .footer-links a:hover { color: var(--muted2); }
 
 
-  </style>
+  
+  /* ── Proof section ── */
+  .proof-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 960px;
+  }
+  .proof-card {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .proof-card:hover { border-color: rgba(255,255,255,0.18); transform: translateY(-2px); }
+  .proof-img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
+  .proof-caption { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.55; padding: 14px 18px; }
+
+  /* ── Pricing extras ── */
+  .pricing-scarcity {
+    font-size: 12px;
+    font-weight: 600;
+    color: #f59e0b;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .pricing-guarantee-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border2);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--muted2);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .proof-grid { grid-template-columns: 1fr; }
+  }
+
+</style>
 </head>
 <body>
 
@@ -888,9 +934,9 @@
 
 <!-- Hero -->
 <section class="hero">
-  <div class="hero-badge">The system 7-figure outbound teams wish they had sooner</div>
+  <div class="hero-badge">Used by freelancers, agency owners, and founders to fill their pipeline without hiring an SDR.</div>
 
-  <h1>From 0 to <em>5,000 verified,<br>personalized leads.</em></h1>
+  <h1>The Outbound System Agencies Are<br>Quietly Running <em>in the Background.</em></h1>
 
   <p class="hero-sub">
     A fully automated outbound system that finds your exact target, researches them, writes a personalized opening line for each one, and verifies every email — while you sleep. One setup. Runs forever.
@@ -901,7 +947,7 @@
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path d="M8 1L15 8L8 15M1 8H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      Get the Blueprint
+      Get My Outbound System
     </a>
     <p class="hero-price-note">One-time payment. <strong>Instant access.</strong> No subscriptions. No fluff.</p>
   </div>
@@ -925,6 +971,25 @@
     </div>
   </div>
 </section>
+
+<!-- ── Proof Section ── -->
+<section class="section">
+  <p class="section-label reveal">Social proof</p>
+  <h2 class="section-title reveal reveal-delay-1">Real campaigns. Real numbers.</h2>
+  <p class="section-sub reveal reveal-delay-2">Run using leads generated directly from this system.</p>
+  <div class="proof-grid reveal reveal-delay-3">
+    <div class="proof-card">
+      <img src="David-Campaign.png" alt="David campaign results" class="proof-img" />
+      <p class="proof-caption">Real Estate niche, US. 1,454 leads contacted. 36 positive replies. $17,681 in tracked deal value.</p>
+    </div>
+    <div class="proof-card">
+      <img src="instantly_campaign.png" alt="Instantly campaign results" class="proof-img" />
+      <p class="proof-caption">LinkedIn Recruitment campaign. 874 emails sent. 13.87% reply rate. 12 opportunities worth $48,000 identified.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
 
 <!-- VSL -->
 <section class="vsl-section">
@@ -951,7 +1016,7 @@
         </div>
       </a>
     </div>
-    <p class="vsl-note">Most people who watch this buy immediately. <strong>You'll see why.</strong></p>
+    <p class="vsl-note">See How it Works — <strong>LIVE</strong></p>
   </div>
 </section>
 
@@ -1161,6 +1226,7 @@
 
   <div class="pricing-card reveal reveal-delay-3">
     <div class="pricing-label">Outbound Sales Engine</div>
+    <p class="pricing-scarcity">Price increases to $397 after the next 4 copies are sold.</p>
     <div class="pricing-price"><sup>$</sup>297</div>
     <div class="pricing-desc">One-time. Instant access. Works forever.</div>
 
@@ -1197,8 +1263,9 @@
       </div>
     </div>
 
+    <div class="pricing-guarantee-box">🔒 If you set it up following the guide and your first run doesn't generate leads, I'll personally jump on a call and fix it with you. No questions asked.</div>
     <a href="https://buy.stripe.com/4gMbJ13n8eYk40RetfcV20g" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;">
-      Get Instant Access
+      Get My Outbound System
     </a>
 
     <p class="pricing-guarantee">
@@ -1282,6 +1349,20 @@
       </button>
       <div class="faq-a">Sending to unverified addresses destroys your sender reputation and gets your domain flagged as spam. Most outbound tools make you pay extra to verify separately. This system does it automatically as part of the same workflow — at no additional cost on the free tier.</div>
     </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        Is this safe to use? Will it get my domain flagged?
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a">Yes, completely safe. The system only uses publicly available data — nothing scraped behind a login wall. The built-in email verification is specifically there to protect your sender domain. It flags bad addresses before they ever touch your outbox, keeping your bounce rate under 2%. The same underlying tools are used daily by thousands of outbound teams.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        Is this against LinkedIn or Apollo's terms of service?
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a">The system pulls publicly available professional data — the same kind any sales tool uses. It does not access any platform behind a login or scrape private data. How you use the leads is up to you, and we recommend always following CAN-SPAM and GDPR guidelines when sending.</div>
+    </div>
   </div>
 </section>
 
@@ -1295,8 +1376,8 @@
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
       <path d="M8 1L15 8L8 15M1 8H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    Get Instant Access
-  </a>
+      Get My Outbound System
+    </a>
   <p class="hero-price-note reveal reveal-delay-3" style="margin-top:16px;">One-time payment. Instant access. No subscriptions ever.</p>
 </section>
 
