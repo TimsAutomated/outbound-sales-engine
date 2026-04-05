@@ -891,10 +891,26 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     transition: border-color 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
   }
   .proof-card:hover { border-color: rgba(255,255,255,0.18); transform: translateY(-2px); }
-  .proof-img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
-  .proof-caption { font-size: 13px; color: var(--muted2); font-weight: 300; line-height: 1.55; padding: 14px 18px; }
+  .proof-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    border-bottom: 1px solid var(--border);
+  }
+  .proof-caption {
+    font-size: 13px;
+    color: var(--muted2);
+    font-weight: 300;
+    line-height: 1.55;
+    padding: 16px 20px;
+    flex: 1;
+  }
 
   /* ── Pricing extras ── */
   .pricing-scarcity {
